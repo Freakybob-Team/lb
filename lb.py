@@ -4,7 +4,7 @@ def code():
         os.system('cls' if os.name=='nt' else 'clear')
     print("Welcome to LB, also known as LigmaBalls.")
     print("For help, type help below.")
-    command = input("lb > ")
+    command = input("lb < ")
     if (command == "fs"):
         isstop = "no"
         print("Welcome to freakysay, also known as FS.")
