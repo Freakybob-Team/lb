@@ -8,6 +8,12 @@ help: shows a list of commands
 credits: shows credits
 <br>
 clear: clears the console
+# how to run
+download from releases
+<br>
+open cmd in folder that contains lb
+<br>
+run py lb.py
 # credits
 Wish made the intial 1.0 version! He also made freakysay and the first version of help.
 <br>
