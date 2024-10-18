@@ -6,6 +6,8 @@ fs: launches freakysay that echos ur words
 help: shows a list of commands
 <br>
 credits: shows credits
+<br>
+clear: clears the console
 # credits
 Wish made the intial 1.0 version! He also made freakysay and the first version of help.
 <br>
