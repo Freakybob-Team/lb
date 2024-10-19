@@ -18,8 +18,9 @@ def code():
         print("Using credits will show the people who helped make this!")
         print("clear")
         print("Clear clears the terminal!")
-        print("open")
-        print("Open opens any .lbs (LigmaBalls Script) file!")
+        print("freakybob")
+        print("WARNING: SPAMS CONSOLE")
+        print("This command prints a freakybob ASCII art thingymajig")
         code()
     if (command == "credits"):
         print("Wish made the intial 1.0 version! He also made freakysay and the first version of help.")
@@ -33,4 +34,5 @@ def code():
         fb = open("freakybob.txt", "r")
         print(fb.read())
         fb.close()
+        code()
 code()
