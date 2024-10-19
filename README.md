@@ -9,7 +9,9 @@ credits: shows credits
 <br>
 clear: clears the console
 <br>
-open: opens a .lbs file
+freakybob: prints ascii art of freakybob
+<br>
+~~open: opens a .lbs file~~
 # how to run
 download from releases
 <br>
