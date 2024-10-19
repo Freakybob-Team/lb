@@ -45,5 +45,5 @@ def code():
     fb = open("freakybob.txt", "r")
     print(fb.read())
     fb.close()
-code()
+    code()
 code()
