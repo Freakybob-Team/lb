@@ -3,6 +3,7 @@ import requests
 import subprocess
 import time
 import socket
+
 def code():
     def cls():
         os.system('cls' if os.name=='nt' else 'clear')
@@ -33,6 +34,8 @@ def code():
         print("Adds Greg Heffley to your desktop")
         print("packing")
         print("A package manager for LigmaBalls!")
+        print("ping")
+        print("Pings google.com and provides the ping time in ms.")
         code()
     if (command == "credits"):
         print("Wish made the intial 1.0 version! He also made freakysay and the first version of help.")
@@ -99,7 +102,7 @@ def code():
             sock = socket.create_connection((server, 80), timeout=2)
             end_time = time.time()
             sock.close()
-            delay = (end_time - start_time) * 1000 
+            delay = (end_time - start_time) * 1000  
             print(f"Pong! {delay:.2f} ms")
         except Exception as e:
             print(f"Error connecting to {server}: {e}")
