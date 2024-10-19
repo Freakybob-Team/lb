@@ -32,7 +32,7 @@ def code():
         print("Updates LigmaBalls")
         print("greg")
         print("Adds Greg Heffley to your desktop")
-        print("packing")
+        print("spkg")
         print("A package manager for LigmaBalls!")
         print("ping")
         print("Pings google.com and provides the ping time in ms.")
@@ -90,15 +90,15 @@ def code():
             print('Failed to download file')
             print("Bringing you back...")
             code()
-    if (command == "packing"):
-        print("Welcome! Packing is a package manager for LigmaBalls.")
+    if (command == "spkg"):
+        print("Welcome! sugamaPackager is a package manager for LigmaBalls.")
         print("This desert is very dry.. Upload something with the link below!")
-        print("https://github.com/Freakybob-Team/packign")
+        print("https://github.com/Freakybob-Team/sugamaPackager")
         print("Current options:")
         print("easyexec")
         choice = input("What package would you like to download?")
         if (choice == "easyexec"):
-            url = 'https://github.com/Freakybob-Team/packign/blob/main/easyexec/launch.bat?raw=true'
+            url = 'https://github.com/Freakybob-Team/sugamaPackager/blob/main/easyexec/launch.bat?raw=true'
         response = requests.get(url)
         file_Path = 'easyexec/launch.bat'
         if response.status_code == 200:
