@@ -22,6 +22,8 @@ def code():
         print("freakybob")
         print("WARNING: SPAMS CONSOLE")
         print("This command prints a freakybob ASCII art thingymajig")
+        print("update")
+        print("Updates LigmaBalls")
         code()
     if (command == "credits"):
         print("Wish made the intial 1.0 version! He also made freakysay and the first version of help.")
