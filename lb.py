@@ -6,13 +6,8 @@ def code():
     print("For help, type help below.")
     command = input("lb < ")
     if (command == "fs"):
-        isstop = "no"
         print("Welcome to freakysay, also known as FS.")
-        print("To exit, say stop.")
-        while (isstop == "no"):
-            echo = input("freakysay < ")
-            if (echo == "stop"):
-                isstop = "yes"
+        echo = input("freakysay < ")
         print(echo)
     if (command == "help"):
         print("Welcome to LigmaBalls!")
@@ -32,4 +27,11 @@ def code():
     if (command == "clear"):
         cls()
         code()
+    if (command == "open"):
+        fname = input("What is the file name of the program you would like to run? (.lbc format) (include the .lbc)")
+        f = open(fname, "r")
+        if ("fs" in f):
+         print("Welcome to freakysay, also known as FS.")
+        echo = input("freakysay < ")
+        print(echo)
 code()
