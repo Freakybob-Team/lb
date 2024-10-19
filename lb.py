@@ -94,7 +94,24 @@ def code():
         print("Welcome! Packing is a package manager for LigmaBalls.")
         print("This desert is very dry.. Upload something with the link below!")
         print("https://github.com/Freakybob-Team/packign")
-        code()
+        print("Current options:")
+        print("easyexec")
+        choice = input("What package would you like to download?")
+        if (choice == "easyexec"):
+            url = 'https://github.com/Freakybob-Team/packign/blob/main/easyexec/launch.bat?raw=true'
+        response = requests.get(url)
+        file_Path = 'easyexec/launch.bat'
+        if response.status_code == 200:
+            os.mkdir("easyexec")
+            with open(file_Path, 'wb') as file:
+                file.write(response.content)
+                print('File downloaded successfully')
+                file.close()
+                code()
+        else:
+            print('Failed to download file')
+            print("Bringing you back...")
+            code()
     if (command == "ping"):
         server = "google.com"
         try:
