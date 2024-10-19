@@ -18,6 +18,8 @@ def code():
         print("Using credits will show the people who helped make this!")
         print("clear")
         print("Clear clears the terminal!")
+        print("open")
+        print("Open opens any .lbs (LigmaBalls Script) file!")
         code()
     if (command == "credits"):
         print("Wish made the intial 1.0 version! He also made freakysay and the first version of help.")
@@ -34,4 +36,24 @@ def code():
          print("Welcome to freakysay, also known as FS.")
         echo = input("freakysay < ")
         print(echo)
+    if ("clear" in f):
+        cls()
+        code()
+    if ("help" in f):
+        print("Welcome to LigmaBalls!")
+        print("Here are some commands you can use:")
+        print("fs")
+        print("Using fs will launch freakysay, so you can echo your words!")
+        print("credits")
+        print("Using credits will show the people who helped make this!")
+        print("clear")
+        print("Clear clears the terminal!")
+        print("open")
+        print("Open opens any .lbs (LigmaBalls Script) file!")
+        code()
+    if ("credits" in f):
+        print("Wish made the intial 1.0 version! He also made freakysay and the first version of help.")
+        print("Names helped Wish decide on the name!")
+        print("Made with love by the Freakybob Team <3")
+        code()
 code()
