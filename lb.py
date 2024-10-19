@@ -1,6 +1,8 @@
 import os
 import requests
 import subprocess
+import time
+import socket
 def code():
     def cls():
         os.system('cls' if os.name=='nt' else 'clear')
@@ -89,5 +91,17 @@ def code():
         print("Welcome! Packing is a package manager for LigmaBalls.")
         print("This desert is very dry.. Upload something with the link below!")
         print("https://github.com/Freakybob-Team/packign")
+        code()
+    if (command == "ping"):
+        server = "google.com"
+        try:
+            start_time = time.time()
+            sock = socket.create_connection((server, 80), timeout=2)
+            end_time = time.time()
+            sock.close()
+            delay = (end_time - start_time) * 1000 
+            print(f"Pong! {delay:.2f} ms")
+        except Exception as e:
+            print(f"Error connecting to {server}: {e}")
         code()
 code()
