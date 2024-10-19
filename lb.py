@@ -1,4 +1,5 @@
 import os
+import requests
 def code():
     def cls():
         os.system('cls' if os.name=='nt' else 'clear')
@@ -31,8 +32,18 @@ def code():
         cls()
         code()
     if (command == "freakybob"):
-        fb = open("freakybob.txt", "r")
-        print(fb.read())
-        fb.close()
-        code()
+        print("This requires an additional download of 5.42 KB.")
+        input("Are you fine with that? Close this if not.")
+        url = 'https://github.com/Freakybob-Team/lb/blob/main/freakybob.txt?raw=true'
+        response = requests.get(url)
+        file_Path = 'freakybob.txt'
+        response = requests.get(url)
+        if response.status_code == 200:
+            with open(file_Path, 'wb') as file:
+                file.write(response.content)
+                print('File downloaded successfully')
+    fb = open("freakybob.txt", "r")
+    print(fb.read())
+    fb.close()
+code()
 code()
