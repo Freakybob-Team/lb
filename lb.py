@@ -11,11 +11,16 @@ def code():
     print("For help, type help below.")
     command = input("lb < ")
     if (command == "fs"):
-        print("This command is broken. Thanks for your patience! <3")
-        code()
-        # print("Welcome to freakysay, also known as FS.")
-        # echo = input("freakysay < ")
-        # print(echo)
+        isstop = "no"
+        print("Welcome to freakysay, also known as FS.")
+        print("Say stop to close the program.")
+        echo = input("freakysay < ")
+        print(echo)
+        if (echo == "stop"):
+            isstop = "yes"
+            code()
+        while (isstop == "no"):
+            echo = input("freakysay < ")
     if (command == "help"):
         print("Welcome to LigmaBalls!")
         print("Here are some commands you can use:")
