@@ -11,18 +11,64 @@
     <meta content="The future is here." property="og:description" />
     <meta content="/https://freakybob-team.github.io/lb/" property="og:url" />
 <style>
+    /* css */
     * {
         font-family: "Libre Franklin", sans-serif;
     }
+
+    img {
+        margin-left: 35%;
+        padding: 50px 0px;
+    display: block;
+    animation: pop-in .6s ease-out forwards;
+    width: 70%;
+    }
+
+  .download {
+  display: block;
+  width: 300px;
+  padding: 31px 5px;
+  border-radius: 40px;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: red;
+  text-align: center;
+  font-family: Helvetica;
+  font-size: 32px;
+  color: mintcream;
+  transition-property: background-color;
+  transition-duration: 750ms;
+  text-decoration: none;
+}
+
+.download:hover {
+  background-color: limegreen;
+}
+
+footer {
+  text-align: center;
+  padding: 50px;
+}
+/* fire animations (im learning how to make animations rn) */
+
+@keyframes pop-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-4rem) scale(1);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
 </style>
 </head>
 <body>
-    <a href="https://en.wikipedia.org/wiki/Ligma_joke"><img src="welcome.gif"></a>
-    <p>LigmaBalls is a Python command-prompt-like program!</p>
-    <a href="https://github.com/Freakybob-Team/lb/blob/main/README.md">Read the README for more information.</a>
-    <br>
-    <a href="https://github.com/Freakybob-Team/lb/releases/latest"><img src="download.gif"></a>
-    <!-- i love you https://willkessler.github.io/typed-text-gif-maker/ <3 -->
-    <!-- thanks https://onlinegiftools.com/remove-gif-background <3 -->
+    <div>
+<img class="welcome" src="welcome.gif" alt="greg">
+    <a class="download" href="https://github.com/Freakybob-Team/lb">download now!</a>
+    </div>
+    <footer>Made with love by the Freakybob Team <3</footer>
 </body>
 </html>
