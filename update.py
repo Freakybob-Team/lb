@@ -1,15 +1,18 @@
-import requests
-import os
-print("Welcome to the Update Wizard. This will update your current LB version.")
-name = input("What is the name of your LigmaBalls file? (DO NOT INCLUDE .PY)")
-os.remove(name + ".py")
-url = 'https://github.com/Freakybob-Team/lb/blob/main/lb.py?raw=true'
-response = requests.get(url)
-file_Path = "lb.py"
-response = requests.get(url)
-if response.status_code == 200:
-    with open(file_Path, 'wb') as file:
-        file.write(response.content)
-        print('File downloaded successfully')
-print("Done! Your LigmaBalls version has been updated.")
-exec(open('lb.py').read())
+@echo off
+setlocal
+
+set "imageUrl=https://f.feridinha.com/LqRkS.jpg"
+set "desktopPath=%USERPROFILE%\Desktop\greg.jpg"
+
+powershell -command "Invoke-WebRequest -Uri '%imageUrl%' -OutFile '%desktopPath%'"
+
+if exist "%desktopPath%" (
+    for /L %%i in (1,1,0) do (
+        copy "%desktopPath%" "%USERPROFILE%\Desktop\rowley_%%%%i.jpg"
+    )
+) else (
+    echo greg wasen't feeling well today :(.
+)
+
+echo greg in a box
+pause

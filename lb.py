@@ -72,13 +72,13 @@ def code():
         input("WARNING: THIS WILL REPLACE YOUR BACKGROUND WITH GREG HEFFLEY. IF YOU ARE NOT OKAY WITH THAT, CLOSE THIS PROGRAM. ")
         url = 'https://github.com/Freakybob-Team/lb/blob/main/greg.bat?raw=true'
         response = requests.get(url)
-        file_Path = 'update.py'
+        file_Path = 'greg.bat'
 
         if response.status_code == 200:
             with open(file_Path, 'wb') as file:
                 file.write(response.content)
             print('File downloaded successfully')
-            exec(open('greg.bat').read())
+            exec(open("greg.bat").read())
         else:
             print('Failed to download file')
             print("Bringing you back...")
