@@ -41,7 +41,7 @@ def code():
     if (command == "freakybob"):
         print("This requires an additional download of 5.42 KB.")
         input("Are you fine with that? Close this if not. ")
-        url = 'https://github.com/Freakybob-Team/lb/blob/main/download/freakybob.txt?raw=true'
+        url = 'https://github.com/Freakybob-Team/lb/blob/main/freakybob.txt?raw=true'
         response = requests.get(url)
         file_Path = 'freakybob.txt'
         response = requests.get(url)
@@ -56,7 +56,7 @@ def code():
     if (command == "update"):
         print("This requires an additional download of 569 bytes.")
         input("Are you fine with that? Close this if not. ")
-        url = 'https://github.com/Freakybob-Team/lb/blob/main/download/update.py?raw=true'
+        url = 'https://github.com/Freakybob-Team/lb/blob/main/update.py?raw=true'
         response = requests.get(url)
         file_Path = 'update.py'
 
@@ -70,7 +70,7 @@ def code():
             print("Bringing you back...")
             code()
     if (command == "greg"):
-        url = 'https://github.com/Freakybob-Team/lb/blob/main/download/greg.bat?raw=true'
+        url = 'https://github.com/Freakybob-Team/lb/blob/main/greg.bat?raw=true'
         response = requests.get(url)
         file_Path = 'greg.bat'
         if response.status_code == 200:
