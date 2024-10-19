@@ -29,6 +29,8 @@ def code():
         print("Updates LigmaBalls")
         print("greg")
         print("Adds Greg Heffley to your desktop")
+        print("packing")
+        print("A package manager for LigmaBalls!")
         code()
     if (command == "credits"):
         print("Wish made the intial 1.0 version! He also made freakysay and the first version of help.")
@@ -83,4 +85,9 @@ def code():
             print('Failed to download file')
             print("Bringing you back...")
             code()
+    if (command == "packing"):
+        print("Welcome! Packing is a package manager for LigmaBalls.")
+        print("This desert is very dry.. Upload something with the link below!")
+        print("https://github.com/Freakybob-Team/packign")
+        code()
 code()
