@@ -11,6 +11,8 @@ clear: clears the console
 <br>
 freakybob: prints ascii art of freakybob
 <br>
+update: updates ligmaballs
+<br>
 ~~open: opens a .lbs file~~
 # how to run
 download from releases
