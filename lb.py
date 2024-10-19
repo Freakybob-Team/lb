@@ -28,7 +28,7 @@ def code():
         cls()
         code()
     if (command == "open"):
-        fname = input("What is the file name of the program you would like to run? (.lbc format) (include the .lbc)")
+        fname = input("What is the file name of the program you would like to run? (.lbs format) (include the .lbs)")
         f = open(fname, "r")
         if ("fs" in f):
          print("Welcome to freakysay, also known as FS.")
