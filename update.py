@@ -12,4 +12,5 @@ if response.status_code == 200:
         file.write(response.content)
         print('File downloaded successfully')
 print("Done! Your LigmaBalls version has been updated.")
+os.remove("update.py")
 exec(open('lb.py').read())
