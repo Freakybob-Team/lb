@@ -14,8 +14,6 @@ freakybob: prints ascii art of freakybob
 update: updates ligmaballs
 <br>
 spkg: opens sugamaPackager (formerly Packing)
-<br>
-~~open: opens a .lbs file~~
 # how to run
 download from releases
 <br>
