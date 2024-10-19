@@ -25,7 +25,7 @@ def code():
         print("Welcome to LigmaBalls!")
         print("Here are some commands you can use:")
         print("fs")
-        print("Using fs will launch freakysay, so you can echo your words! (BROKEN)")
+        print("Using fs will launch freakysay, so you can echo your words!")
         print("credits")
         print("Using credits will show the people who helped make this!")
         print("clear")
