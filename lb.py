@@ -13,14 +13,9 @@ def code():
     if (command == "fs"):
         isstop = "no"
         print("Welcome to freakysay, also known as FS.")
-        print("Say stop to close the program.")
-        echo = input("freakysay < ")
-        print(echo)
-        if (echo == "stop"):
-            isstop = "yes"
-            code()
         while (isstop == "no"):
             echo = input("freakysay < ")
+            print(echo)
     if (command == "help"):
         print("Welcome to LigmaBalls!")
         print("Here are some commands you can use:")
