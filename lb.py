@@ -42,19 +42,24 @@ def code():
             with open(file_Path, 'wb') as file:
                 file.write(response.content)
                 print('File downloaded successfully')
-    fb = open("freakybob.txt", "r")
-    print(fb.read())
-    fb.close()
-    code()
+        fb = open("freakybob.txt", "r")
+        print(fb.read())
+        fb.close()
+        code()
     if (command == "update"):
         print("This requires an additional download of 569 bytes.")
         input("Are you fine with that? Close this if not. ")
-        url = 'https://github.com/Freakybob-Team/lb/blob/main/lb.py?raw=true'
+        url = 'https://github.com/Freakybob-Team/lb/blob/main/update.py?raw=true'
         response = requests.get(url)
-        file_Path = 'lb.py'
-        response = requests.get(url)
+        file_Path = 'update.py'
+
         if response.status_code == 200:
             with open(file_Path, 'wb') as file:
                 file.write(response.content)
-                print('File downloaded successfully')
+            print('File downloaded successfully')
+            exec(open('update.py').read())
+        else:
+            print('Failed to download file')
+            print("Bringing you back...")
+            code()
 code()
