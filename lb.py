@@ -141,6 +141,6 @@ def code():
             print(quotient)
         code()
     else:
-        print("Command not found")
+        print("'" + command + "' is not recognized as a command.")
         code()
 code()
