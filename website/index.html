@@ -11,14 +11,14 @@
     <meta content="The future is here." property="og:description" />
     <meta content="/https://freakybob-team.github.io/lb/" property="og:url" />
 <style>
-    /* css */
+    /* CSS */
     * {
         font-family: "Libre Franklin", sans-serif;
     }
 
-    img {
-    margin-left: 35%;
-    padding: 50px 0px;
+    .welcome {
+        margin-left: 35%;
+        padding: 50px 0px;
     display: block;
     animation: pop-in .6s ease-out forwards;
     width: 65%;
@@ -26,9 +26,9 @@
 
   .download {
   display: block;
-  width: 300px;
-  padding: 31px 5px;
-  border-radius: 40px;
+  width: 400px;
+  padding: 20px 5px;
+  border-radius: 30px;
   margin-top: 10px;
   margin-left: auto;
   margin-right: auto;
@@ -37,22 +37,36 @@
   font-family: Helvetica;
   font-size: 32px;
   color: mintcream;
-  transition-property: background-color;
-  transition-duration: 750ms;
+  transition: .8s background-position ease-in-out;
   text-decoration: none;
   animation: pop-in .6s ease-out forwards;
+  background-position: left;
+  background-image: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+  background-size: 300%;
+  background-position: left;
 }
 
 .download:hover {
-  background-color: limegreen;
+  background-position: right;
 }
 
 footer {
+  animation: pop-in .6s ease-out forwards;
   text-align: center;
   padding: 50px;
+}
+
+.github {
+  height: 2%;
+  width: 2%;
   animation: pop-in .6s ease-out forwards;
 }
-/* fire animations (im learning how to make animations rn) */
+
+.greg {
+  text-align: center;
+   display:block;
+}
+/* Animations */
 
 @keyframes pop-in {
   0% {
@@ -69,8 +83,11 @@ footer {
 <body>
     <div>
 <img class="welcome" src="welcome.gif" alt="greg">
-    <a class="download" href="https://github.com/Freakybob-Team/lb/releases/download/Future/setup.py">download now!</a>
+    <a class="download" href="https://github.com/Freakybob-Team/lb">download Latest(vFuture)</a>
     </div>
     <footer>Made with love by the Freakybob Team <3</footer>
+    <div class="greg">
+    <a class="" href="https://github.com/Freakybob-Team/lb"><img class="github" src="logo-github.png"></a>
+    </div>
 </body>
 </html>
