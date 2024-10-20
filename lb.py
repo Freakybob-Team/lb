@@ -7,13 +7,6 @@ import socket
 def code():
     def cls():
         os.system('cls' if os.name=='nt' else 'clear')
-    chkurl = 'https://https://github.com/Freakybob-Team/lb/blob/main/version/104.txt'
-    chkresponse = requests.get(chkurl)
-    if chkresponse.status_code == 200:
-        code()
-    else:
-        print("WARNING: Your version is out of date.")
-        code()
     print("Welcome to LB, also known as LigmaBalls.")
     print("For help, type help below.")
     command = input("lb < ")
