@@ -36,6 +36,8 @@ def code():
         print("A package manager for LigmaBalls!")
         print("ping")
         print("Pings google.com and provides the ping time in ms.")
+        print("buttcalc")
+        print("literally just a calculator")
         code()
     if (command == "credits"):
         print("Wish made the intial 1.0 version! He also made freakysay and the first version of help.")
@@ -127,5 +129,22 @@ def code():
     if (command == "quarky"):
         print("YOU DUMMY PYTHON 3.8??? THE NEWEST VERSION IS 3.13")
         print("AND A PIP VERSION FROM 2021?????")
+        code()
+    if (command == "buttcalc"):
+        num1 = input("First number: ")
+        num2 = input("Second number: ")
+        sign = input("Enter the operation thingy (ex: Addition) ")
+        if (sign == "Addition"):
+            sum = int(num1) + int(num2)
+            print(sum)
+        if (sign == "Multiplication"):
+            product = int(num1) * int(num2)
+            print(product)
+        if (sign == "Subtraction"):
+            difference = int(num1) - int(num2)
+            print(difference)
+        if (sign == "Division"):
+            quotient = int(num1) / int(num2)
+            print(quotient)
         code()
 code()
