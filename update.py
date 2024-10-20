@@ -21,7 +21,7 @@ else:
         file.write(response.content)
         print('File downloaded successfully')
 print("Done! Your LigmaBalls version has been updated.")
-wantremove = input("Do you want to delete update.py? (Yes/No)")
+wantremove = input("Do you want to delete update.py? (Yes/No) ")
 if (wantremove == "Yes"):
     os.remove("update.py")
 else:
