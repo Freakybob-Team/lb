@@ -24,7 +24,3 @@ download from releases
 open cmd in folder that contains lb
 <br>
 run py lb.py
-# credits
-Wish made the intial 1.0 version! He also made freakysay and the first version of help.
-<br>
-Names helped Wish decide on the name!
