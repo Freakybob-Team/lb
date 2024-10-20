@@ -149,7 +149,7 @@ def code():
             quotient = int(num1) / int(num2)
             print(quotient)
         code()
-        if (command == "dungeon"):
-            print("Freakybob keeps me in his dungeon all day. I want out. help")
-            code()
+    if (command == "dungeon"):
+        print("help freakybob has me in his dungeon send help NOW please")
+        code()
 code()
