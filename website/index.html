@@ -66,6 +66,16 @@ footer {
   text-align: center;
    display:block;
 }
+
+.credits {
+  transition-duration: 1s;
+  transition-property: color;
+  transition-timing-function: ease;
+}
+
+.credits:hover {
+  color: orange;
+}
 /* Animations */
 
 @keyframes pop-in {
@@ -85,12 +95,12 @@ footer {
 <img class="welcome" src="welcome.gif" alt="greg">
     <a class="download" href="https://github.com/Freakybob-Team/lb/releases/download/Future/setup.py">download the installer!</a>
     </div>
-    <footer>Made with love by the <a href="https://github.com/Freakybob-Team/">Freakybob Team</a> <3</footer>
+    <footer>Made with love by the <a class="credits" href="https://github.com/Freakybob-Team/">Freakybob Team</a> <3</footer>
     <div class="greg">
     <a class="" href="https://github.com/Freakybob-Team/lb"><img class="github" src="logo-github.png"></a>
     </div>
     <footer>
-Music by <a href="https://pixabay.com/users/pumpupthemind-19969411/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=241274">Ivan Ohanezov</a> from <a href="https://pixabay.com/music//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=241274">Pixabay</a>
+Music by <a class="credits" href="https://pixabay.com/users/pumpupthemind-19969411/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=241274">Ivan Ohanezov</a> from <a class="credits" href="https://pixabay.com/music//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=241274">Pixabay</a>
     </footer>
     <script>
 const ks = new Audio('creative-technology-showreel-241274.mp3')
