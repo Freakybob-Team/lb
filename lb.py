@@ -129,6 +129,9 @@ def code():
         print("YOU DUMMY PYTHON 3.8??? THE NEWEST VERSION IS 3.13")
         print("AND A PIP VERSION FROM 2021?????")
         code()
+    if (command == "thiscommanddoesnotexist"):
+        print("Yes it does.")
+        code()
     if (command == "buttcalc"):
         num1 = input("First number: ")
         num2 = input("Second number: ")
