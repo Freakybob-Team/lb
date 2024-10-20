@@ -124,4 +124,8 @@ def code():
         except Exception as e:
             print(f"Error connecting to {server}: {e}")
         code()
+    if (command == "quarky"):
+        print("YOU DUMMY PYTHON 3.8??? THE NEWEST VERSION IS 3.13")
+        print("AND A PIP VERSION FROM 2021?????")
+        code()
 code()
