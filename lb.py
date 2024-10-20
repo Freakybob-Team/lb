@@ -140,4 +140,7 @@ def code():
             quotient = int(num1) / int(num2)
             print(quotient)
         code()
+    else:
+        print("Command not found")
+        code()
 code()
