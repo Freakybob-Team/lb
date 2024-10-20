@@ -15,6 +15,8 @@ update: updates ligmaballs
 <br>
 spkg: opens sugamaPackager (formerly Packing)
 <br>
+ping: pings google.com
+<br>
 buttcalc: calculator
 # how to run
 download from releases
