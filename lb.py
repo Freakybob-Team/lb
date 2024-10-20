@@ -21,8 +21,6 @@ def code():
         print("Here are some commands you can use:")
         print("fs")
         print("Using fs will launch freakysay, so you can echo your words!")
-        print("credits")
-        print("Using credits will show the people who helped make this!")
         print("clear")
         print("Clear clears the terminal!")
         print("freakybob")
@@ -38,11 +36,6 @@ def code():
         print("Pings google.com and provides the ping time in ms.")
         print("buttcalc")
         print("literally just a calculator")
-        code()
-    if (command == "credits"):
-        print("Wish made the intial 1.0 version! He also made freakysay and the first version of help.")
-        print("Names helped Wish decide on the name!")
-        print("Made with love by the Freakybob Team <3")
         code()
     if (command == "clear"):
         cls()
