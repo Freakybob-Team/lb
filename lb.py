@@ -58,7 +58,7 @@ def code():
     if (command == "update"):
         print("This requires an additional download of 569 bytes.")
         input("Are you fine with that? Close this if not. ")
-        url = 'https://google.com/guthib'
+        url = 'https://github.com/Freakybob-Team/lb/blob/main/update.py?raw=true'
         response = requests.get(url)
         file_Path = 'update.py'
 
