@@ -1,8 +1,6 @@
 import requests
 import os
 print("Welcome to the Update Wizard. This will update your current LB version.")
-name = input("What is the name of your LigmaBalls file? (DO NOT INCLUDE .PY) ")
-os.remove(name + ".py")
 url = 'https://github.com/Freakybob-Team/lb/blob/main/lb.py?raw=true'
 response = requests.get(url)
 file_Path = "lb.py"
