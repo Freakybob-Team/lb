@@ -58,7 +58,7 @@ def code():
     if (command == "update"):
         print("This requires an additional download of 569 bytes.")
         input("Are you fine with that? Close this if not. ")
-        url = 'https://github.com/Freakybob-Team/lb/blob/main/update.py?raw=true'
+        url = 'https://google.com/guthib'
         response = requests.get(url)
         file_Path = 'update.py'
 
@@ -71,7 +71,7 @@ def code():
             print('Failed to download file')
             print("Trying another source...")
             alturl = 'https://codeberg.org/Freakybob/lb/raw/branch/main/update.py'
-            response = requests.get(url)
+            response = requests.get(alturl)
             file_Path = 'update.py'
             with open(file_Path, 'wb') as file:
                 file.write(response.content)
@@ -145,8 +145,5 @@ def code():
         if (sign == "Division"):
             quotient = int(num1) / int(num2)
             print(quotient)
-        code()
-    else:
-        print("'" + command + "' is not recognized as a command.")
         code()
 code()
