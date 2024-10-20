@@ -150,6 +150,6 @@ def code():
             print(quotient)
         code()
         if (command == "dungeon"):
-        print("Freakybob keeps me in his dungeon all day. I want out. help")
-        code()
+            print("Freakybob keeps me in his dungeon all day. I want out. help")
+            code()
 code()
