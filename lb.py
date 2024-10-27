@@ -101,9 +101,10 @@ def code():
         if (choice == "easyexec"):
             url = 'https://github.com/Freakybob-Team/sugamaPackager/blob/main/easyexec/launch.bat?raw=true'
         response = requests.get(url)
-        file_Path = 'easyexec/launch.bat'
+        file_Path = 'spkg/easyexec/launch.bat'
         if response.status_code == 200:
-            os.mkdir("easyexec")
+            os.mkdir("spkg")
+            os.mkdir("spkg/easyexec")
             with open(file_Path, 'wb') as file:
                 file.write(response.content)
                 print('File downloaded successfully')
