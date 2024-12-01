@@ -44,8 +44,24 @@ if (sys.argv[1] == "freakybob"):
     print(fb.read())
     fb.close()
 if (sys.argv[1] == "update"):
-    print("Whoa!")
-    print("Excuse our mess. You've run into a feature that hasn't been implemented!")
+    url = 'https://github.com/Freakybob-Team/lb/blob/main/Largsupdate.py?raw=true'
+    response = requests.get(url)
+    file_Path = 'update.py'
+    if response.status_code == 200:
+        with open(file_Path, 'wb') as file:
+            file.write(response.content)
+        print('File downloaded successfully')
+        exec(open('update.py').read())
+    else:
+        print('Failed to download file')
+        print("Trying another source...")
+        alturl = 'https://codeberg.org/Freakybob/lb/raw/branch/main/Largsupdate.py'
+        response = requests.get(alturl)
+        file_Path = 'update.py'
+        with open(file_Path, 'wb') as file:
+            file.write(response.content)
+            print('File downloaded successfully')
+            exec(open('update.py').read())
 if (sys.argv[1] == "greg"):
     url = 'https://github.com/Freakybob-Team/lb/blob/main/greg.bat?raw=true'
     response = requests.get(url)
