@@ -24,4 +24,3 @@ if (wantremove == "Yes"):
     os.remove("Largsupdate.py")
 else:
     print("Okay! We have not deleted update.py.")
-exec(open('Largs.py').read())
