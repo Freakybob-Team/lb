@@ -8,6 +8,7 @@ def code():
     def cls():
         os.system('cls' if os.name=='nt' else 'clear')
     print("Welcome to LB, also known as LigmaBalls.")
+    print("(GPL-3.0) 2025 Freakybob Team - For more detailed credits, run 'credits'.")
     print("For help, type help below.")
     command = input("lb < ")
     if (command == "fs"):
@@ -34,6 +35,14 @@ def code():
         print("Pings google.com and provides the ping time in ms.")
         print("buttcalc")
         print("literally just a calculator")
+        print("credits")
+        print("Shows more detailed credits.")
+        code()
+    if (command == "credits"):
+        print("CREDITS WRITTEN BY WISH")
+        print("I created the original LigmaBalls, updated it, and did most of the work.")
+        print("Names helped me decide on a name (very fitting, I know).")
+        print("You! Thank you for supporting us. :)")
         code()
     if (command == "clear"):
         cls()
